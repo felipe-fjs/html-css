@@ -1,0 +1,17 @@
+#mudar {
+    display: none;
+}
+span {
+    background-color: lime;
+}
+p#aqui:hover > #mudar {
+    display: block;
+    border: 1px blue;
+}
+
+#oi::first-line {
+    color: blueviolet;
+}
+a {
+    text-decoration: overline;   
+}

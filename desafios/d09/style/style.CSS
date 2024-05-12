@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat';
+    background-color: rgb(255, 254, 254);
+}
+h1, p, iframe{
+    text-align: center;
+}
+
+
+.playlist {
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+    color: black;
+}
+
+.playlist:hover {
+    font-weight: 800;
+    text-decoration: none;
+    color: purple;
+}
+.playlist:hover::before, .playlist:hover::after {
+    content: '||';
+}

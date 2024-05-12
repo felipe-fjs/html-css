@@ -1,0 +1,138 @@
+:root {
+    /* CORES PADRÕES */
+    --cor0: #3EE001;
+    --cor1: #47B61E;
+    --cor2: #478B2E;
+    --cor3: #3D6130;
+    --cor4: #293624;
+    --font0: Arial, Helvetica, sans-serif;
+    --font1: cursive;
+}
+
+body {
+    padding: 0 0 ;
+    margin: 0 0;
+    background-color: whitesmoke;
+    font-family: var(--font0);
+    line-height: 1.4em;
+}
+body > h1, h2, h3, h4, h5, h5 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* CSS do HEADER */
+header {
+    margin: 0px;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, var(--cor2), #345329);
+}
+header > h1{
+    margin-top: 0; 
+    margin-bottom: 16px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1.5px black;
+}
+header > p {
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+nav {
+    background-color: #345329;
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 2px 10px 2px 10px;
+    transition-duration: .5s;
+}
+nav > a:hover {
+    background-color: #3D6130;
+    border-radius: 5px;
+    color: var(--cor0);
+}
+
+
+
+/* CSS do MAIN */
+main {
+    min-width: 400px;
+    max-width: 800px;
+    margin: auto;
+    padding: 8px 16px;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.374);
+}
+main  h1, h2, h3, h4, h5, h6 {
+    text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.549);
+}
+main img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+main strong {
+    color: darkgreen;
+    font-size: bold;
+}
+article > h1 {
+    margin-top: 1em;
+}
+article > p{
+    text-align: justify;
+    text-indent: 3em;
+    line-height: 1.5em;
+}
+/* div.video {
+    background-color: #293624;
+    border-radius: 5px;
+    padding-bottom: 45%;
+    position: relative;
+    box-shadow: 0px 1px 5px 1.5px rgba(0, 0, 0, 0.477);
+
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+} */
+div.video {
+    background-color: #293624;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 1.5px rgba(0, 0, 0, 0.477);
+    position: relative;
+    padding-bottom: 50%;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+
+/* CSS do FOOTER */
+footer {
+    margin: 0;
+    text-align: center;
+    background-color: var(--cor3);
+}
+footer > a {
+    color: white;
+    text-decoration: none;
+
+}
+footer > a:hover {
+    color: #43FE00;
+    text-decoration: underline #43FE00;
+    text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.421);
+}
+
