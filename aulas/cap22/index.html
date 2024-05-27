@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Iframes</title>
+    <style>
+        a#ativador:hover > iframe#alvo {
+    
+            background-color: rgba(255, 235, 205, 0.507);
+            display: block;
+        }
+        iframe {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="alvo" name="quadro">ola</iframe>
+    <a href="pag2.html" id="ativador" target="quadro">Ola</a>
+</body>
+</html>
