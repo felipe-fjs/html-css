@@ -40,7 +40,7 @@ iframe {
 
 section#redes {
     position: absolute;
-    right: 0%;
+    right: 2%;
     top: 50%;
     transform: translate(0%, -50%);
 
@@ -48,8 +48,17 @@ section#redes {
 }
 
 img.icone {
+    box-sizing: border-box;
     border-radius: 50%;
 
     width: 100%;
-    margin: 20px 0 20px 0;
+    margin: 10px 0px 10px 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+img.icone:hover {
+    border: 2px solid white;
+    transform: translate(-2px, -2px);
+    transition: transform 0.3s, border .5s;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.45);
+
 }
