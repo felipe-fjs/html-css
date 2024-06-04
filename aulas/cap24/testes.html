@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+    <style>
+        form {
+            position: relative;
+            width: 250px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        form input.label {
+            position: absolute;
+            right: 5px;
+        }
+        form legend {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <legend>Cadastro de Colaboradores</legend>
+        <p>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" class="label" required>
+        </p>
+        <p>
+            <label for="idemail">Email</label>
+            <input type="email" name="email" id="idemail" class="label" required>
+        </p>
+        <p>
+            <label for="idmatricula">Matrícula:</label>
+            <input type="number" name="matricula" id="idmatricula" class="label" required>
+        </p>
+        <p>
+            <label for="idkey">Senha:</label>
+            <input type="password" name="key" id="idkey" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar" >
+        </p>
+    </form>
+</body>
+</html>
