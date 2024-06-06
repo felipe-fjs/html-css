@@ -7,7 +7,7 @@
     <style>
         form {
             position: relative;
-            width: 250px;
+            width: 400px;
             border: 1px solid black;
             padding: 5px;
         }
@@ -19,32 +19,25 @@
             text-align: center;
             margin-bottom: 10px;
         }
-
+        img {
+            width: 100px;
+            border-radius: 50%;
+        }
+        button {
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
-    
-    <form action="cadastro.php" method="post" autocomplete="off">
-        <legend>Cadastro de Colaboradores</legend>
+    <form action="cadastro.py" method="get">
+        
+
         <p>
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" class="label" required>
+            <input type="radio" name="sexo" id="masc" value="M" checked required><label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem" value="F"><label for="fem">Feminino</label>
         </p>
-        <p>
-            <label for="idemail">Email</label>
-            <input type="email" name="email" id="idemail" class="label" required>
-        </p>
-        <p>
-            <label for="idmatricula">Matrícula:</label>
-            <input type="number" name="matricula" id="idmatricula" class="label" required>
-        </p>
-        <p>
-            <label for="idkey">Senha:</label>
-            <input type="password" name="key" id="idkey" required>
-        </p>
-        <p>
-            <input type="submit" value="Enviar" >
-        </p>
+
+        <input type="submit">
     </form>
 </body>
 </html>
