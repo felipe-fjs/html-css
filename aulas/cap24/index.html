@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+    <style>
+        form {
+            position: relative;
+            width: 500px;
+            margin: auto;
+
+            padding-bottom: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.564);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.449);
+        }
+        form fieldset {
+            position: relative;
+
+            margin: 10px;
+
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.592);
+        }
+        form input.textInput{
+            position: absolute;
+            right: 10px;
+
+            width: 70%;
+        }
+        form select {
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+        }
+        form h2 {
+            text-align: center;
+        }
+        form input#submit {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+
+            width: 100px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <form action="cadastro.py" method="get">
+        <h2>Inscrição</h2>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" class="textInput" required placeholder="nome">
+            </p>
+            <p>
+                <label for="sobnome">Sobrenome: </label>
+                <input type="text" name="sobnome" class="textInput" id="sobnome">
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="masc" value="M" checked required><label for="masc">Masculino</label>
+                <input type="radio" name="sexo" id="fem" value="F"><label for="fem">Feminino</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Contato</legend>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" class="textInput">
+            </p>
+            <p>
+                <label for="tel">Telefone: </label>
+                <input type="tel" name="tel" id="tel" class="textInput" pattern="\([\d]{2}\)([\s])[9]([\s])[\d]{4,5}-[\d]{4}" placeholder="(xx) x xxxx-xxxx">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Acadêmicos</legend>
+            <p>
+                <label for="matricula">Matricula:</label>
+                <input type="number" name="matricula" id="matricula" class="textInput" required placeholder="Matricula">
+            </p>
+            <p>
+                <label for="curso">Curso</label>
+                <select name="curso" id="curso">
+                    <option value="0">---Escolha um curso---</option>
+                    <option value="med">Medicina</option>
+                    <option value="enf">Enfermagem</option>
+                    <option value="fisio">Fisioterapia</option>
+                    <option value="to">Terapia Ocupacional</option>
+                    <option value="fo">Fonoaudiologia</option>
+                </select>
+            </p>
+
+        </fieldset>
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>

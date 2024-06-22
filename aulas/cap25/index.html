@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/icon-phone.png" media="screen" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icon-tablet.png" media="screen and (min-width: 650px)" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icon-pc.png" type="image/x-icon" media="screen and (min-width: 1050px)">
+    
+    
+    
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        #phone {
+            display: block;
+            width: 100%;
+        }
+        #desktop {
+            display: none;
+        }
+        @media screen and (min-width: 992px) {
+            #desktop {
+                display: block;
+                width: 100%;
+            }
+            #phone {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img id="desktop" src="1.png" alt="">
+    <img id="phone" src="3.png" alt="">
+</body>
+</html>
