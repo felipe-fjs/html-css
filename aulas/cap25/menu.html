@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style1.css" media="all">
+    <link rel="stylesheet" href="styles/style2.css" media="screen and (min-width: 600px)">
+
+</head>
+<body onresize="resized()">
+    <header>
+        <nav>
+            <h1>Menu responsivo</h1>
+            <span id="burguer" onclick="menuClick()" class="material-symbols-outlined">menu</span>
+            <menu id="navmenu">
+                    <a href="">Home</a>
+                    <a href="">criar</a>
+                    <a href="">criar aluno</a>
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Testando responsividade de menu</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quia distinctio suscipit exercitationem non? Voluptates aliquid reprehenderit quaerat veritatis harum ad nesciunt est odit eos, repellendus, amet error, quod praesentium!
+                Excepturi culpa maxime consequatur laudantium ducimus enim iure corporis pariatur placeat. Inventore omnis fuga necessitatibus facere, voluptates laudantium reprehenderit maiores commodi voluptate laborum nesciunt dicta? Alias quisquam voluptatum recusandae deserunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ea? Id temporibus at voluptates suscipit ut quod voluptas rem, provident velit aperiam ab nihil, doloremque animi aliquid amet sint molestiae.
+                Ad impedit itaque doloribus nihil ratione inventore veritatis. Est et aspernatur dolore quos sapiente quasi vitae ipsam aut velit, eum cum consequuntur blanditiis dicta non quis, adipisci illo accusantium aliquid!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsam necessitatibus eos culpa pariatur! Quas voluptatum cumque commodi provident aut. Deserunt, fugit culpa. Veritatis odio, enim quidem perferendis accusantium facere.
+                Tenetur, laboriosam reiciendis dicta sapiente distinctio corrupti maiores iure obcaecati ex a, quod corporis quo vero? Qui porro eum ullam nobis optio aut quisquam, magni officiis ut blanditiis? Repudiandae, dignissimos!
+                Molestias iure necessitatibus temporibus et maiores similique perspiciatis aut, inventore ad doloremque numquam cumque placeat deleniti ab voluptatem, fugit praesentium fugiat nihil aliquid! Sequi eos rem commodi, repellat nobis cum.</p>
+            </article>
+        </article>
+    </main>
+    <script>
+        function resized(){
+            // let menu = document.getElementById('navmenu')
+            if (window.innerWidth >= 600)  {
+                navmenu.style.display = 'block'
+            } else {
+                navmenu.style.display = 'none'
+
+            }
+        }
+        function menuClick(){
+            let menu = document.getElementById('navmenu')
+            if (menu.style.display === 'none') {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        };
+    
+    </script>
+</body>
+</html>

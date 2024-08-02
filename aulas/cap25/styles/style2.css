@@ -1,0 +1,22 @@
+nav > #burguer {
+    display: none;
+
+}
+nav > menu{
+    display: block;
+}
+nav > menu a{
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.412);
+    padding: 5px;
+    background-color: grey;
+    color: white;
+}
+nav > menu a:hover {
+    box-shadow: 1px 1px 3px black;
+}
+
+main {
+    width: 600px;
+}
